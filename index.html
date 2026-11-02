@@ -5,7 +5,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#080b14">
-<title>ZENTRO | CDB Link Hub</title>
+
+<title>ZENTRO | Official Link Hub</title>
 
 <style>
 * {
@@ -39,6 +40,8 @@ body {
     max-width: 850px;
     margin: auto;
 }
+
+/* HEADER */
 
 header {
     text-align: center;
@@ -84,12 +87,20 @@ header {
     box-shadow: 0 0 10px #38e6a3;
 }
 
+/* SECTIONS */
+
 .section-title {
     color: var(--muted);
     font-size: 11px;
     letter-spacing: 3px;
-    margin: 25px 0 15px;
+    margin: 30px 0 15px;
 }
+
+.section-title.kura {
+    color: #c49aff;
+}
+
+/* LINK CARDS */
 
 .links {
     display: grid;
@@ -162,6 +173,31 @@ header {
     font-size: 21px;
 }
 
+/* KURA */
+
+.kura-card {
+    background: linear-gradient(145deg, #211936, #151222);
+    border-color: #b17aff33;
+}
+
+.kura-card::after {
+    background: #a56bff;
+}
+
+.kura-card:hover {
+    border-color: #bd8affaa;
+}
+
+.kura-card .icon {
+    background: #a56bff20;
+}
+
+.kura-card .arrow {
+    color: #c49aff;
+}
+
+/* COMING SOON */
+
 .placeholder {
     opacity: .65;
     border-style: dashed;
@@ -178,6 +214,8 @@ header {
     background: #ffffff0b;
 }
 
+/* FOOTER */
+
 footer {
     text-align: center;
     margin-top: 55px;
@@ -192,6 +230,8 @@ footer strong {
     color: #75b5ff;
     letter-spacing: 3px;
 }
+
+/* MOBILE */
 
 @media (max-width: 560px) {
     .links {
@@ -210,95 +250,170 @@ footer strong {
 </head>
 
 <body>
+
 <div class="container">
 
-<header>
-    <div class="logo">ZENTRO</div>
-    <div class="subtitle">CDB NETWORK · OFFICIAL LINK HUB</div>
-    <div class="status">
-        <span class="dot"></span>
-        CDB LINK CENTER
+    <!-- HEADER -->
+
+    <header>
+        <div class="logo">ZENTRO</div>
+
+        <div class="subtitle">
+            OFFICIAL LINK HUB
+        </div>
+
+        <div class="status">
+            <span class="dot"></span>
+            COMMUNITY LINK CENTER
+        </div>
+    </header>
+
+
+    <!-- CDB LINKS -->
+
+    <div class="section-title">
+        01 / CDB NETWORK
     </div>
-</header>
 
-<div class="section-title">01 / OFFICIAL LINKS</div>
+    <div class="links">
 
-<div class="links">
+        <a class="link-card"
+           href="https://discord.gg/qdP8jZhjyH"
+           target="_blank"
+           rel="noopener noreferrer">
 
-    <a class="link-card"
-       href="https://discord.gg/qdP8jZhjyH"
-       target="_blank" rel="noopener noreferrer">
-        <div class="icon">💬</div>
-        <div class="link-info">
-            <h3>CDB Discord</h3>
-            <p>Community & Support</p>
+            <div class="icon">💬</div>
+
+            <div class="link-info">
+                <h3>CDB Discord</h3>
+                <p>Community & Support</p>
+            </div>
+
+            <span class="arrow">↗</span>
+        </a>
+
+
+        <a class="link-card"
+           href="https://www.opsucht.net/"
+           target="_blank"
+           rel="noopener noreferrer">
+
+            <div class="icon">⛏️</div>
+
+            <div class="link-info">
+                <h3>OPSUCHT.NET</h3>
+                <p>Minecraft Network</p>
+            </div>
+
+            <span class="arrow">↗</span>
+        </a>
+
+
+        <a class="link-card"
+           href="https://cdbverify-1.onrender.com/"
+           target="_blank"
+           rel="noopener noreferrer">
+
+            <div class="icon">🛡️</div>
+
+            <div class="link-info">
+                <h3>CDB Verify</h3>
+                <p>Verification System</p>
+            </div>
+
+            <span class="arrow">↗</span>
+        </a>
+
+
+        <a class="link-card"
+           href="https://cdb-oqg6.onrender.com"
+           target="_blank"
+           rel="noopener noreferrer">
+
+            <div class="icon">🌐</div>
+
+            <div class="link-info">
+                <h3>CDB Plattform</h3>
+                <p>Official CDB Platform</p>
+            </div>
+
+            <span class="arrow">↗</span>
+        </a>
+
+    </div>
+
+
+    <!-- KURA LINKS -->
+
+    <div class="section-title kura">
+        02 / KURA NETWORK
+    </div>
+
+    <div class="links">
+
+        <a class="link-card kura-card"
+           href="https://kura-clan.de/opsucht-portal.html"
+           target="_blank"
+           rel="noopener noreferrer">
+
+            <div class="icon">🎮</div>
+
+            <div class="link-info">
+                <h3>KURA Portal</h3>
+                <p>Official KURA Website</p>
+            </div>
+
+            <span class="arrow">↗</span>
+        </a>
+
+    </div>
+
+
+    <!-- UPCOMING PROJECTS -->
+
+    <div class="section-title">
+        03 / UPCOMING PROJECTS
+    </div>
+
+    <div class="links">
+
+        <div class="link-card placeholder">
+
+            <div class="icon">＋</div>
+
+            <div class="link-info">
+                <h3>Coming Soon</h3>
+                <p>Neues CDB Projekt</p>
+            </div>
+
         </div>
-        <span class="arrow">↗</span>
-    </a>
 
-    <a class="link-card"
-       href="https://www.opsucht.net/"
-       target="_blank" rel="noopener noreferrer">
-        <div class="icon">⛏️</div>
-        <div class="link-info">
-            <h3>OPSUCHT.NET</h3>
-            <p>Minecraft Network</p>
-        </div>
-        <span class="arrow">↗</span>
-    </a>
 
-    <a class="link-card"
-       href="https://cdbverify-1.onrender.com/"
-       target="_blank" rel="noopener noreferrer">
-        <div class="icon">🛡️</div>
-        <div class="link-info">
-            <h3>CDB Verify</h3>
-            <p>Verification System</p>
-        </div>
-        <span class="arrow">↗</span>
-    </a>
+        <div class="link-card placeholder">
 
-    <a class="link-card"
-       href="https://cdb-oqg6.onrender.com"
-       target="_blank" rel="noopener noreferrer">
-        <div class="icon">🌐</div>
-        <div class="link-info">
-            <h3>CDB Plattform</h3>
-            <p>Official CDB Platform</p>
+            <div class="icon">＋</div>
+
+            <div class="link-info">
+                <h3>Coming Soon</h3>
+                <p>Weiteres Projekt</p>
+            </div>
+
         </div>
-        <span class="arrow">↗</span>
-    </a>
+
+    </div>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+        <strong>ZENTRO 3.0</strong>
+        <br>
+        CDB NETWORK · OFFICIAL LINK HUB
+        <br>
+        Alle wichtigen Community-Links an einem Ort.
+    </footer>
 
 </div>
 
-<div class="section-title">02 / UPCOMING PROJECTS</div>
-
-<div class="links">
-
-    <div class="link-card placeholder">
-        <div class="icon">＋</div>
-        <div class="link-info">
-            <h3>Coming Soon</h3>
-            <p>Neues CDB Projekt</p>
-        </div>
-    </div>
-
-    <div class="link-card placeholder">
-        <div class="icon">＋</div>
-        <div class="link-info">
-            <h3>Coming Soon</h3>
-            <p>Weitere CDB Plattform</p>
-        </div>
-    </div>
-
-</div>
-
-<footer>
-    <strong>ZENTRO 3.0</strong><br>
-    CDB NETWORK · ALL RIGHTS RESERVED<br>
-    Official Community Link Center
-</footer>
-
-</div>
 </body>
 </html>
