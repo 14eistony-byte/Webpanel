@@ -1,0 +1,304 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080b14">
+<title>ZENTRO | CDB Link Hub</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #080b14;
+    --card: #111827;
+    --border: rgba(255,255,255,.09);
+    --blue: #4388ff;
+    --cyan: #36d9ff;
+    --text: #f4f7ff;
+    --muted: #9ba8bd;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: var(--text);
+    background:
+        radial-gradient(ellipse at 50% 0%, #142b55 0%, transparent 48%),
+        var(--bg);
+    padding: 30px 18px 50px;
+}
+
+.container {
+    width: 100%;
+    max-width: 850px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    padding: 65px 10px 42px;
+}
+
+.logo {
+    font-size: clamp(48px, 12vw, 76px);
+    font-weight: 900;
+    letter-spacing: 9px;
+    background: linear-gradient(100deg, #fff, #58a5ff, #35e0ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    filter: drop-shadow(0 0 25px #398bff55);
+}
+
+.subtitle {
+    color: var(--muted);
+    letter-spacing: 5px;
+    font-size: 11px;
+    margin-top: 12px;
+}
+
+.status {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 25px;
+    padding: 9px 15px;
+    border: 1px solid #36d9ff44;
+    border-radius: 30px;
+    color: #65e7ff;
+    font-size: 12px;
+    background: #36d9ff0c;
+}
+
+.dot {
+    width: 7px;
+    height: 7px;
+    background: #38e6a3;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #38e6a3;
+}
+
+.section-title {
+    color: var(--muted);
+    font-size: 11px;
+    letter-spacing: 3px;
+    margin: 25px 0 15px;
+}
+
+.links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.link-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 23px;
+    min-height: 115px;
+    color: white;
+    text-decoration: none;
+    background: linear-gradient(145deg, #172237, #101725);
+    border: 1px solid var(--border);
+    border-radius: 17px;
+    transition: .25s ease;
+    overflow: hidden;
+}
+
+.link-card::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: -50px;
+    bottom: -65px;
+    background: var(--blue);
+    filter: blur(55px);
+    opacity: .25;
+}
+
+.link-card:hover {
+    transform: translateY(-5px);
+    border-color: #4388ff99;
+    box-shadow: 0 12px 35px #0008;
+}
+
+.icon {
+    width: 52px;
+    height: 52px;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    border-radius: 14px;
+    background: #4388ff18;
+    font-size: 25px;
+}
+
+.link-info {
+    min-width: 0;
+}
+
+.link-info h3 {
+    font-size: 16px;
+    margin-bottom: 7px;
+}
+
+.link-info p {
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.arrow {
+    margin-left: auto;
+    color: #6baaff;
+    font-size: 21px;
+}
+
+.placeholder {
+    opacity: .65;
+    border-style: dashed;
+    cursor: default;
+}
+
+.placeholder:hover {
+    transform: none;
+    box-shadow: none;
+    border-color: var(--border);
+}
+
+.placeholder .icon {
+    background: #ffffff0b;
+}
+
+footer {
+    text-align: center;
+    margin-top: 55px;
+    padding-top: 25px;
+    border-top: 1px solid var(--border);
+    color: #718096;
+    font-size: 12px;
+    line-height: 2;
+}
+
+footer strong {
+    color: #75b5ff;
+    letter-spacing: 3px;
+}
+
+@media (max-width: 560px) {
+    .links {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        padding-top: 35px;
+    }
+
+    .link-card {
+        min-height: 100px;
+    }
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<header>
+    <div class="logo">ZENTRO</div>
+    <div class="subtitle">CDB NETWORK · OFFICIAL LINK HUB</div>
+    <div class="status">
+        <span class="dot"></span>
+        CDB LINK CENTER
+    </div>
+</header>
+
+<div class="section-title">01 / OFFICIAL LINKS</div>
+
+<div class="links">
+
+    <a class="link-card"
+       href="https://discord.gg/qdP8jZhjyH"
+       target="_blank" rel="noopener noreferrer">
+        <div class="icon">💬</div>
+        <div class="link-info">
+            <h3>CDB Discord</h3>
+            <p>Community & Support</p>
+        </div>
+        <span class="arrow">↗</span>
+    </a>
+
+    <a class="link-card"
+       href="https://www.opsucht.net/"
+       target="_blank" rel="noopener noreferrer">
+        <div class="icon">⛏️</div>
+        <div class="link-info">
+            <h3>OPSUCHT.NET</h3>
+            <p>Minecraft Network</p>
+        </div>
+        <span class="arrow">↗</span>
+    </a>
+
+    <a class="link-card"
+       href="https://cdbverify-1.onrender.com/"
+       target="_blank" rel="noopener noreferrer">
+        <div class="icon">🛡️</div>
+        <div class="link-info">
+            <h3>CDB Verify</h3>
+            <p>Verification System</p>
+        </div>
+        <span class="arrow">↗</span>
+    </a>
+
+    <a class="link-card"
+       href="https://cdb-oqg6.onrender.com"
+       target="_blank" rel="noopener noreferrer">
+        <div class="icon">🌐</div>
+        <div class="link-info">
+            <h3>CDB Plattform</h3>
+            <p>Official CDB Platform</p>
+        </div>
+        <span class="arrow">↗</span>
+    </a>
+
+</div>
+
+<div class="section-title">02 / UPCOMING PROJECTS</div>
+
+<div class="links">
+
+    <div class="link-card placeholder">
+        <div class="icon">＋</div>
+        <div class="link-info">
+            <h3>Coming Soon</h3>
+            <p>Neues CDB Projekt</p>
+        </div>
+    </div>
+
+    <div class="link-card placeholder">
+        <div class="icon">＋</div>
+        <div class="link-info">
+            <h3>Coming Soon</h3>
+            <p>Weitere CDB Plattform</p>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <strong>ZENTRO 3.0</strong><br>
+    CDB NETWORK · ALL RIGHTS RESERVED<br>
+    Official Community Link Center
+</footer>
+
+</div>
+</body>
+</html>
